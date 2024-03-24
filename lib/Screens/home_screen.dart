@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                     const Spacer(),
                     Center(
                       child: Container(
-                        height: 60,
+                        height: 55,
                         width: size.width / 1.4,
                         decoration: BoxDecoration(
                             color: Colors.white,
@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                               "Search Employees",
                               style: TextStyle(
                                 color: Color(0xFF0F4C75),
-                                fontSize: 16,
+                                fontSize: 15,
                                 fontFamily: 'Inter',
                                 fontWeight: FontWeight.w500,
                               ),
@@ -129,42 +129,35 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(
                 height: 20,
               ),
-                Padding(
+              Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   children: [
                     buttonItem(
-                        title: "Current Leave",
-                        subtitle: "2",
-                        size: size),
+                        title: "Current Leave", subtitle: "2", size: size),
                     const Spacer(),
                     buttonItem(
-                        title: "Leave Request",
-                        subtitle: "2",
-                        size: size),
+                        title: "Leave Request", subtitle: "2", size: size),
                   ],
                 ),
               ),
-                const SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-                Padding(
+              Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   children: [
-                    buttonItem(
-                        title: "Transfer IN",
-                        subtitle: "5",
-                        size: size),
+                    buttonItem(title: "Transfer IN", subtitle: "5", size: size),
                     const Spacer(),
                     buttonItem(
-                        title: "Transfer OUT",
-                        subtitle: "5",
-                        size: size),
+                        title: "Transfer OUT", subtitle: "5", size: size),
                   ],
                 ),
               ),
-             const SizedBox(height: 20,)
+              const SizedBox(
+                height: 20,
+              )
             ],
           ),
         ),
@@ -185,6 +178,7 @@ Widget buttonItem(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
         color: Colors.white,
+        border: Border.all(color: const Color.fromARGB(255, 175, 208, 236),width: 0.5),
         boxShadow: const [
           BoxShadow(
             color: Colors.black54,
